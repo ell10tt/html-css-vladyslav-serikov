@@ -1,0 +1,67 @@
+$main-button-color: #5C8A4C;
+$hover-button-color: #16251A;
+$main-text-color: #16251A;
+$second-text-color: #FFFFFF;
+
+body {
+    background-image: url(../img/homeBackground.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.main {
+    .heading__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        gap: 200px;
+
+        margin-top: 10vw;
+        .heading {
+            text-align: center;
+            font-size: 64px;
+            color: $main-text-color;
+        }
+    }
+
+    .sub-heading__container {
+        display: flex;
+        justify-content: space-around;
+
+        margin-top: 32px;
+        .sub-heading{
+            font-size: 48px;
+            color: $main-text-color;
+        }
+    }
+
+    .button__container {
+        display: flex;
+        justify-content: center;
+
+        .shop__button {
+            display: flex;
+    
+            align-items: center;
+            justify-content: center;
+    
+            width: 280px;
+            height: 68px;
+    
+            background-color: $button-color;
+            border-radius: 14px;
+            color: $second-text-color;
+            opacity: 70%;
+            text-decoration: none;
+            
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .shop__button:hover {
+            background-color: $hover-button-color;
+            transition: 0.5s;
+            animation: ease-in-out;
+        }
+    }
+}

@@ -3,3 +3,4 @@
 
     1. header - 80% (adapt it for mobile)
     2. footer - 80% (adapt for mobile)
+    3. fix the main page sizes
