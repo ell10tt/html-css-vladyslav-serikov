@@ -1,0 +1,53 @@
+$main-color: #618DB6;
+$main-font-color:#FFFFFF;
+
+$breakpoint-laptops: 1200px;
+$breakpoint-big-tablets: 979px;
+$breakpoint-small-tablets: 767px;
+$breakpoint-phones: 480px;
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    height: 53px;
+    width: 100vw;
+
+    background-color: $main-color;
+
+    position: fixed;
+    bottom: 0;
+
+    .footer__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        align-items: center;
+
+
+        .footer__list__punct{
+            list-style: none;
+
+            .footer__list__link {
+                color: $main-font-color;
+                text-decoration: none;
+                font-size: 20px;
+
+                .footer__icon {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .footer__list__punct:nth-child(-n+5) {
+        margin-right: 80px;
+    }
+
+    .footer__list__punct:nth-last-child(-n+3) {
+        margin-right: 16px;
+    }
+}
