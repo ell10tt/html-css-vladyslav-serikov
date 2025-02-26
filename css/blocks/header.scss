@@ -9,7 +9,7 @@
 
 
 .header {
-    max-width: 100vw;
+    max-height: 135px;
 
     .navigation {
         .navigation__list {
@@ -61,8 +61,6 @@
         }
     }
 }
-
-// add it later
 
 @media (max-width: $breakpoint-laptops) {
     .header {

@@ -1,0 +1,107 @@
+body {
+  background-size: 100vh;
+  background: rgb(97, 141, 182);
+  background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
+}
+
+.main .cards .row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 59px;
+}
+.main .cards .row1 .card {
+  width: 360px;
+  height: 360px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.main .cards .row1 .card .name__container {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.main .cards .row1 .card .name__container .jacket__pic {
+  margin-top: 12px;
+}
+.main .cards .row1 .card .price__block {
+  margin-left: 20px;
+}
+.main .cards .row1 .card .price__block .price {
+  font-size: 24px;
+}
+.main .cards .row1 .card .price__panel {
+  display: flex;
+}
+.main .cards .row1 .card .price__panel .size__block {
+  display: flex;
+}
+.main .cards .row1 .card .price__panel .size__block .size {
+  margin-right: 5px;
+}
+.main .cards .row1 .card .price__panel .addToCart__button {
+  display: flex;
+  width: 186px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+  margin-top: -30px;
+  background-color: #4895DD;
+  color: #fff;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.main .cards .row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 44px;
+  margin-bottom: 80px;
+}
+.main .cards .row2 .card {
+  width: 360px;
+  height: 360px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.main .cards .row2 .card .name__container {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.main .cards .row2 .card .name__container .jacket__pic {
+  margin-top: 12px;
+}
+.main .cards .row2 .card .price__block {
+  margin-left: 20px;
+}
+.main .cards .row2 .card .price__block .price {
+  font-size: 24px;
+}
+.main .cards .row2 .card .price__panel {
+  display: flex;
+}
+.main .cards .row2 .card .price__panel .size__block {
+  display: flex;
+}
+.main .cards .row2 .card .price__panel .size__block .size {
+  margin-right: 5px;
+}
+.main .cards .row2 .card .price__panel .addToCart__button {
+  display: flex;
+  width: 186px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+  margin-top: -30px;
+  background-color: #4895DD;
+  color: #fff;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}/*# sourceMappingURL=products.css.map */

@@ -1,6 +1,6 @@
 body {
   background-image: url(../img/homeBackground.png);
-  background-size: 100%;
+  background-size: 100vw;
   background-repeat: no-repeat;
 }
 

@@ -11,12 +11,14 @@ $breakpoint-phones: 480px;
     display: flex;
     justify-content: center;
 
+    margin-top: 60px;
+
     height: 53px;
     width: 100vw;
 
     background-color: $main-color;
 
-    position: fixed;
+    position:fixed;
     bottom: 0;
 
     .footer__list {

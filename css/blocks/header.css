@@ -1,5 +1,5 @@
 .header {
-  max-width: 100vw;
+  max-height: 135px;
 }
 .header .navigation .navigation__list {
   display: flex;

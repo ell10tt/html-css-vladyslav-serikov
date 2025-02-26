@@ -1,0 +1,158 @@
+
+$card-background: #fff;
+$button-background: #4895DD;
+
+body {
+    background-size: 100vh;
+    background: rgb(97,141,182);
+    background: linear-gradient(0deg, rgba(97,141,182,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+
+
+
+.main {
+    .cards {
+        .row1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            margin-top: 59px;
+            .card {
+                width: 360px;
+                height: 360px;
+
+                border-radius: 20px;
+
+                background-color: $card-background;
+
+                .name__container {
+                    text-align: center;
+
+                    font-size: 24px;
+                    font-weight: 500;
+
+                    .jacket__pic {
+                        margin-top: 12px;
+                    }
+                }
+
+                .price__block {
+                    margin-left: 20px;
+                    .price {
+                        font-size: 24px;
+                    }
+                }
+
+                .price__panel { 
+                    display: flex;
+
+                    .size__block {
+                        display: flex;
+    
+                        .size {
+                            margin-right: 5px;
+                        }
+                    }
+    
+                    .addToCart__button {
+                        display: flex;
+
+                        width: 186px;
+                        height: 50px;
+                        
+                        align-items: center;
+                        justify-content: center;
+                        
+                        margin-left: 80px;
+                        margin-top: -30px;
+                        
+                        background-color: $button-background;
+                        
+                        color: #fff;
+                        
+                        border-radius: 14px;
+                        
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: bold;
+    
+                    }
+                }
+            }
+        }
+
+        .row2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            margin-top: 44px;
+            margin-bottom: 80px;
+
+            .card {
+                width: 360px;
+                height: 360px;
+
+                border-radius: 20px;
+
+                background-color: $card-background;
+
+                .name__container {
+                    text-align: center;
+
+                    font-size: 24px;
+                    font-weight: 500;
+
+                    .jacket__pic {
+                        margin-top: 12px;
+                    }
+                }
+
+                .price__block {
+                    margin-left: 20px;
+                    .price {
+                        font-size: 24px;
+                    }
+                }
+
+                .price__panel { 
+                    display: flex;
+
+                    .size__block {
+                        display: flex;
+    
+                        .size {
+                            margin-right: 5px;
+                        }
+                    }
+    
+                    .addToCart__button {
+                        display: flex;
+
+                        width: 186px;
+                        height: 50px;
+                        
+                        align-items: center;
+                        justify-content: center;
+                        
+                        margin-left: 80px;
+                        margin-top: -30px;
+                        
+                        background-color: $button-background;
+                        
+                        color: #fff;
+                        
+                        border-radius: 14px;
+                        
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: bold;
+    
+                    }
+                }
+            }
+        }
+    }
+}
