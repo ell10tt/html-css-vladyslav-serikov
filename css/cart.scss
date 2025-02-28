@@ -1,0 +1,116 @@
+$main-color: #FFFFFF;
+$main-font-color:#030303;
+$secondary-color:#4895DD;
+
+
+body {
+    height: 100vh;
+    background-size: 100vh;
+    background: rgb(97,141,182);
+    background: linear-gradient(0deg, rgba(97,141,182,1) 0%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    .back__button {
+        display: flex;
+
+        text-decoration: none;
+        
+        position: absolute;
+
+        left: 38px;
+        top: 146px;
+
+        .back__icon {
+            width: 42px;
+            height: 42px;
+        }
+
+        .back__link {
+            text-align: center;
+            margin-top: 6px;
+            margin-left: 6px;
+
+            font-size: 28px;
+
+            color: $main-font-color;
+        }
+    }
+
+    .cart__items {
+        margin-top: 100px;
+        .card {
+            display: flex;
+
+            background-color: $main-color;
+            border-radius: 18px;
+
+            .card__image {
+                max-width: 144px;
+                padding-left: 22px;
+                padding-top: 11px;
+                padding-bottom: 11px;
+
+            }
+
+            .card__info {
+                margin-left: 32px;
+                .jacket__name {
+                    margin-top: 11px;
+                    font-size: 28px;
+                }
+                
+                .size__container {
+                    display: flex;
+
+                    font-size: 18px;
+
+                    .sizes {
+                        display: flex;
+
+                        .size__item {
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+
+            .quantity__container {
+                .delete__item {
+                    width: 54px;
+                    height: 54px;
+
+                    margin-top: 11px;
+                    margin-left: 98px;
+
+                    border-width: 0;
+                    border-radius: 10px;
+
+                    background-color: $secondary-color;
+                    background-image: url(../img/icons/trash.png);
+                    background-size: 40px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .delete__item:hover {
+                    background-color: #326BA0;
+                    cursor: pointer;
+                }
+
+                .quantity__box {
+                    
+                }
+
+            }
+
+
+
+        }
+    }
+}
+

@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+  background-size: 100vh;
+  background: rgb(97, 141, 182);
+  background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.main .back__button {
+  display: flex;
+  text-decoration: none;
+  position: absolute;
+  left: 38px;
+  top: 146px;
+}
+.main .back__button .back__icon {
+  width: 42px;
+  height: 42px;
+}
+.main .back__button .back__link {
+  text-align: center;
+  margin-top: 6px;
+  margin-left: 6px;
+  font-size: 28px;
+  color: #030303;
+}
+.main .cart__items {
+  margin-top: 100px;
+}
+.main .cart__items .card {
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 18px;
+}
+.main .cart__items .card .card__image {
+  max-width: 144px;
+  padding-left: 22px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.main .cart__items .card .card__info {
+  margin-left: 32px;
+}
+.main .cart__items .card .card__info .jacket__name {
+  margin-top: 11px;
+  font-size: 28px;
+}
+.main .cart__items .card .card__info .size__container {
+  display: flex;
+  font-size: 18px;
+}
+.main .cart__items .card .card__info .size__container .sizes {
+  display: flex;
+}
+.main .cart__items .card .card__info .size__container .sizes .size__item {
+  margin-left: 6px;
+}
+.main .cart__items .card .quantity__container .delete__item {
+  width: 54px;
+  height: 54px;
+  margin-top: 11px;
+  margin-left: 98px;
+  border-width: 0;
+  border-radius: 10px;
+  background-color: #4895DD;
+  background-image: url(../img/icons/trash.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .cart__items .card .quantity__container .delete__item:hover {
+  background-color: #326BA0;
+  cursor: pointer;
+}/*# sourceMappingURL=cart.css.map */

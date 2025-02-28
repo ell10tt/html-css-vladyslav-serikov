@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   background-size: 100vh;
   background: rgb(97, 141, 182);
   background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
@@ -104,4 +105,9 @@ body {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
 }/*# sourceMappingURL=products.css.map */

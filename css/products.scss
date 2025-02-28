@@ -3,6 +3,7 @@ $card-background: #fff;
 $button-background: #4895DD;
 
 body {
+    overflow-x: hidden;
     background-size: 100vh;
     background: rgb(97,141,182);
     background: linear-gradient(0deg, rgba(97,141,182,1) 0%, rgba(255,255,255,1) 100%);
@@ -155,4 +156,9 @@ body {
             }
         }
     }
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
 }

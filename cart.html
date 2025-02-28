@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/blocks/header.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/zero.css">
+    <link rel="stylesheet" href="css/cart.css">
+
     <title>Cart</title>
 </head>
 <body>
@@ -47,8 +49,97 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
+        <a class="back__button" href="products.html">
+            <img class="back__icon" src="img/icons/back.png" alt="#">
+            <p class="back__link">Back</p>
+        </a>
+
+        <section class="cart__items">
+            <div class="card">
+                <img class="card__image" 
+                src="img/jackets/SummitShieldPic.png" alt="">
+
+                <div class="card__info">
+                    <p class="jacket__name">Summit Shield</p>
+    
+                    
+                    <div class="size__container">
+                        <p class="size__text">Size:</p>
+                        
+                        <div class="sizes">
+                            <p class="size__item">S</p>
+                            <p class="size__item">M</p>
+                            <p class="size__item">L</p>
+                            <p class="size__item">XL</p>
+                        </div>
+                    </div>
+
+                    <p>49.99$</p>
+                </div class="card__info">
+
+                <div class="quantity__container">
+                    <button class="delete__item"></button>
+    
+                    <div class="quantity__box">
+                        <p>Quantity</p>
+    
+                        <input type="number">
+                    </div>
+    
+    
+                    <a href="products.html">Go to shop</a>
+                </div>
+            </div>
+
+            <div class="card">
+
+            </div>
+
+            <div class="card">
+
+            </div>
+        </section>
         
+        <section class="cart__info">
+            <h1 class="info__total">Total: 210.96$</h1>
+
+            <p class="info__text">Shipping & Returns</p>
+
+            <ul class="info__list">
+                <li class="info__text">
+                    Free shipping on orders over $100
+                </li>
+
+                <li class="info__text">
+                    Standard shipping: 5-7 business days
+                </li>
+
+                <li class="info__text">
+                    Express shipping: 2-3 business days
+                </li>
+
+                <li class="info__text">
+                    30-day return policy (items must be unused and in original packaging)
+                </li>
+            </ul>
+
+            <p class="info__text">Payments & Security</p>
+
+            <ul class="info__list">
+                <li class="info__text">Secure checkout with encrypted payment processing</li>
+                <li class="info__text">We accept Visa, MasterCard, PayPal, and more</li>
+            </ul>
+            <p class="info__text">Customer Support</p>
+            <ul class="info__list">
+                <li class="info__text">Need help? Contact us at [email@example.com]</li>
+                <li class="info__text">Live chat support available Mon-Fri, 9 AM - 6 PM</li>
+            </ul>
+            <div class="buttons">
+                <a href="products.html">Buy More</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
