@@ -1,11 +1,12 @@
 $main-color: #FFFFFF;
 $main-font-color:#030303;
+$secondary-font-color:#FFFFFF;
 $secondary-color:#4895DD;
 
 
 body {
-    height: 100vh;
-    background-size: 100vh;
+    height: 100%;
+    background-size: 100%;
     background: rgb(97,141,182);
     background: linear-gradient(0deg, rgba(97,141,182,1) 0%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
@@ -43,12 +44,17 @@ body {
     }
 
     .cart__items {
-        margin-top: 100px;
+        margin-top: 66px;
+
         .card {
             display: flex;
 
             background-color: $main-color;
             border-radius: 18px;
+            margin-bottom: 30px;
+
+            width: 583px;
+            height: 182px;
 
             .card__image {
                 max-width: 144px;
@@ -63,10 +69,12 @@ body {
                 .jacket__name {
                     margin-top: 11px;
                     font-size: 28px;
+                    width: 219px;
                 }
                 
                 .size__container {
                     display: flex;
+                    margin-top: 44px;
 
                     font-size: 18px;
 
@@ -78,6 +86,11 @@ body {
                         }
                     }
                 }
+                .price__block1, .price__block2, .price__block3 { 
+                    margin-top: 20px;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
             }
 
             .quantity__container {
@@ -87,6 +100,7 @@ body {
 
                     margin-top: 11px;
                     margin-left: 98px;
+                    margin-right: 14px;
 
                     border-width: 0;
                     border-radius: 10px;
@@ -103,9 +117,63 @@ body {
                 }
 
                 .quantity__box {
-                    
+                display: flex;
+
+                justify-content: space-around;
+
+                margin-top: 30px;
+                margin-right: 14px;
+
+                font-size: 18px;
+
+                .quantity__input1, .quantity__input2, .quantity__input3 {
+                    width: 40px;
+                    height: 24px;
+
+                    text-align: center;
+
+                    background-color: $secondary-color;
+
+                    border-radius: 10px;
+                    border-width: 0;
+
+                    color: $secondary-font-color;
+                    font-size: 18px;
                 }
 
+                .quantity__input1::-webkit-outer-spin-button,
+                .quantity__input1::-webkit-inner-spin-button,
+                .quantity__input2::-webkit-outer-spin-button,
+                .quantity__input2::-webkit-inner-spin-button,
+                .quantity__input3::-webkit-outer-spin-button,
+                .quantity__input3::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                -moz-appearance: textfield;
+                margin: 0;
+                }
+
+                
+            }
+
+            .shop__button {
+                display: flex;
+
+                align-items: center;
+                justify-content: center;
+
+                width: 111px;
+                height: 27px;
+
+                position: relative;
+
+                top: 20px;
+                left: 32px;
+
+                text-decoration: none;
+                color: $secondary-font-color;
+                
+                background-color: $secondary-color;
+                border-radius: 10px;
             }
 
 
@@ -113,4 +181,9 @@ body {
         }
     }
 }
+}
 
+.footer {
+    position: relative;
+    bottom: 0;
+}
