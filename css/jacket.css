@@ -1,0 +1,62 @@
+body {
+  height: 100vh;
+  background-size: 100%;
+  background: rgb(97, 141, 182);
+  background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.main .back__button {
+  display: flex;
+  text-decoration: none;
+  position: absolute;
+  left: 38px;
+  top: 146px;
+}
+.main .back__button .back__icon {
+  width: 42px;
+  height: 42px;
+}
+.main .back__button .back__link {
+  text-align: center;
+  margin-top: 6px;
+  margin-left: 6px;
+  font-size: 28px;
+  color: #030303;
+}
+.main .image__container {
+  margin-left: 200px;
+  margin-top: 80px;
+}
+.main .image__container .main__image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+  background-color: #FFFFFF;
+  border-radius: 22px;
+}
+.main .image__container .second__image__container {
+  display: flex;
+  margin-top: 20px;
+}
+.main .image__container .second__image__container .second__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  width: 60px;
+  height: 60px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+.main .image__container .second__image__container .second__container:hover {
+  cursor: pointer;
+  margin-right: 16px;
+  width: 80px;
+  height: 80px;
+  transition: 0.2s ease-out;
+  background-color: #B2D3FF;
+}/*# sourceMappingURL=jacket.css.map */

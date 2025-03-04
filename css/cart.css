@@ -4,6 +4,7 @@ body {
   background: rgb(97, 141, 182);
   background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .main {
@@ -63,9 +64,19 @@ body {
   display: flex;
 }
 .main .cart__items .card .card__info .size__container .sizes .size__item {
+  width: 39px;
+  height: 24px;
   margin-left: 6px;
+  background-color: #4895DD;
+  text-align: center;
+  border-radius: 10px;
+  color: #FFFFFF;
 }
-.main .cart__items .card .card__info .price__block1, .main .cart__items .card .card__info .price__block2, .main .cart__items .card .card__info .price__block3 {
+.main .cart__items .card .card__info .size__container .sizes .size__item:hover {
+  cursor: pointer;
+  color: #030303;
+}
+.main .cart__items .card .card__info .price__block {
   margin-top: 20px;
   font-size: 24px;
   font-weight: 500;
@@ -95,7 +106,7 @@ body {
   margin-right: 14px;
   font-size: 18px;
 }
-.main .cart__items .card .quantity__container .quantity__box .quantity__input1, .main .cart__items .card .quantity__container .quantity__box .quantity__input2, .main .cart__items .card .quantity__container .quantity__box .quantity__input3 {
+.main .cart__items .card .quantity__container .quantity__box .quantity__input {
   width: 40px;
   height: 24px;
   text-align: center;
@@ -105,12 +116,8 @@ body {
   color: #FFFFFF;
   font-size: 18px;
 }
-.main .cart__items .card .quantity__container .quantity__box .quantity__input1::-webkit-outer-spin-button,
-.main .cart__items .card .quantity__container .quantity__box .quantity__input1::-webkit-inner-spin-button,
-.main .cart__items .card .quantity__container .quantity__box .quantity__input2::-webkit-outer-spin-button,
-.main .cart__items .card .quantity__container .quantity__box .quantity__input2::-webkit-inner-spin-button,
-.main .cart__items .card .quantity__container .quantity__box .quantity__input3::-webkit-outer-spin-button,
-.main .cart__items .card .quantity__container .quantity__box .quantity__input3::-webkit-inner-spin-button {
+.main .cart__items .card .quantity__container .quantity__box .quantity__input::-webkit-outer-spin-button,
+.main .cart__items .card .quantity__container .quantity__box .quantity__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   -moz-appearance: textfield;
   margin: 0;
@@ -128,6 +135,43 @@ body {
   color: #FFFFFF;
   background-color: #4895DD;
   border-radius: 10px;
+}
+.main .cart__info {
+  margin-top: 50px;
+}
+.main .cart__info .info__total {
+  font-size: 48px;
+  font-weight: 600;
+}
+.main .cart__info .info__h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.main .cart__info .info__text {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.main .cart__info .info__list {
+  margin-bottom: 16px;
+}
+.main .cart__info .info__text:last-child {
+  margin-bottom: 30px;
+}
+.main .cart__info .buttons .cart__btn {
+  margin-top: 30px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 40px;
+  border-radius: 14px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 500;
+  background-color: #4895DD;
+}
+.main .cart__info .buttons .checkout__button {
+  margin-left: 42px;
 }
 
 .footer {

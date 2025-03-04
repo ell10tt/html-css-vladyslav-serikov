@@ -49,8 +49,6 @@
         </nav>
     </header>
 
-    <script src="./js/price.js"></script>
-
     <main class="main">
         <a class="back__button" href="products.html">
             <img class="back__icon" src="img/icons/back.png" alt="#">
@@ -77,7 +75,7 @@
                         </div>
                     </div>
 
-                    <p class="price__block1">49.99$</p>
+                    <p class="price__block">49.99$</p>
                 </div class="card__block">
 
                 <div class="quantity__container">
@@ -86,7 +84,7 @@
                     <div class="quantity__box">
                         <p>Quantity</p>
     
-                        <input class="quantity__input1" type="number" min="0" max="5" value="1">
+                        <input class="quantity__input" type="number" min="0" max="5" value="1">
                     </div>
     
     
@@ -115,7 +113,7 @@
                             </div>
                         </div>
     
-                        <p class="price__block2">99.98$</p>
+                        <p class="price__block">99.98$</p>
                     </div class="card__block">
     
                     <div class="quantity__container">
@@ -124,7 +122,7 @@
                         <div class="quantity__box">
                             <p>Quantity</p>
         
-                            <input class="quantity__input2" type="number" min="0" max="5" value="2">
+                            <input class="quantity__input" type="number" min="0" max="5" value="2">
                         </div>
         
         
@@ -154,7 +152,7 @@
                         </div>
                     </div>
 
-                    <p class="price__block3">60.99$</p>
+                    <p class="price__block">60.99$</p>
                 </div class="card__block">
 
                 <div class="quantity__container">
@@ -163,7 +161,7 @@
                     <div class="quantity__box">
                         <p>Quantity</p>
     
-                        <input class="quantity__input3" type="number" min="0" max="5" value="1">
+                        <input class="quantity__input" type="number" min="0" max="5" value="1">
                     </div>
     
     
@@ -177,7 +175,7 @@
         <section class="cart__info">
             <h1 class="info__total">Total: 210.96$</h1>
 
-            <p class="info__text">Shipping & Returns</p>
+            <p class="info__h3">Shipping & Returns</p>
 
             <ul class="info__list">
                 <li class="info__text">
@@ -197,20 +195,25 @@
                 </li>
             </ul>
 
-            <p class="info__text">Payments & Security</p>
+            <p class="info__h3">Payments & Security</p>
 
             <ul class="info__list">
                 <li class="info__text">Secure checkout with encrypted payment processing</li>
                 <li class="info__text">We accept Visa, MasterCard, PayPal, and more</li>
             </ul>
-            <p class="info__text">Customer Support</p>
+
+            <p class="info__h3">Customer Support</p>
+
             <ul class="info__list">
-                <li class="info__text">Need help? Contact us at [email@example.com]</li>
+                <li class="info__text">Need help? Contact us at 
+                    <a href="mailto:email@example.com" >email@example.com</a>
+                </li>
+                
                 <li class="info__text">Live chat support available Mon-Fri, 9 AM - 6 PM</li>
             </ul>
             <div class="buttons">
-                <a href="products.html">Buy More</a>
-                <a href="checkout.html">Checkout</a>
+                <a class="buy__button cart__btn" href="products.html">Buy More</a>
+                <a class="checkout__button cart__btn" href="checkout.html">Checkout</a>
             </div>
         </section>
     </main>
