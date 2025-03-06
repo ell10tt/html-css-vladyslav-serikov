@@ -4,9 +4,12 @@ body {
   background: rgb(97, 141, 182);
   background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
   background-repeat: no-repeat;
-  overflow-x: hidden;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+}
 .main .back__button {
   display: flex;
   text-decoration: none;
@@ -26,17 +29,19 @@ body {
   color: #030303;
 }
 .main .image__container {
-  margin-left: 200px;
   margin-top: 80px;
 }
 .main .image__container .main__image__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 320px;
-  height: 320px;
+  width: 380px;
+  height: 380px;
   background-color: #FFFFFF;
   border-radius: 22px;
+}
+.main .image__container .main__image__container .main__image {
+  width: 280px;
 }
 .main .image__container .second__image__container {
   display: flex;
@@ -59,4 +64,75 @@ body {
   height: 80px;
   transition: 0.2s ease-out;
   background-color: #B2D3FF;
+}
+.main .info__container {
+  margin-top: 70px;
+  margin-left: 60px;
+}
+.main .info__container .name__rate {
+  display: flex;
+}
+.main .info__container .name__rate .heading {
+  font-weight: 500;
+  font-size: 48px;
+}
+.main .info__container .name__rate .stars {
+  display: flex;
+  align-items: center;
+}
+.main .info__container .name__rate .stars .star {
+  width: 34px;
+  height: 34px;
+  margin-left: 18px;
+  background-image: url(../img/icons/StarActive.png);
+  background-repeat: no-repeat;
+}
+.main .info__container .name__rate .stars .star:last-child {
+  background-image: url(../img/icons/StarInactive.png);
+}
+.main .info__container .description__container {
+  font-size: 20px;
+  max-width: 600px;
+}
+.main .info__container .description__container .description__list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main .info__container .description__container .description__list .list__item {
+  margin-left: 20px;
+}
+.main .info__container .sizes__container {
+  display: flex;
+  text-align: center;
+}
+.main .info__container .sizes__container .size__box {
+  font-size: 32px;
+  color: #FFFFFF;
+  width: 54px;
+  height: 54px;
+  background-color: #A09F9F;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.main .info__container .sizes__container .size__box:first-child {
+  margin-left: 0;
+}
+.main .info__container .sizes__container .size__box:hover {
+  background-color: #4895DD;
+  cursor: pointer;
+}
+.main .info__container .add__to__cart__btn {
+  margin-left: 337px;
+  width: 226px;
+  height: 68px;
+  font-size: 32px;
+  color: #FFFFFF;
+  border-radius: 14px;
+  border-width: 0;
+  background-color: #4895DD;
+  cursor: pointer;
+}
+.main .info__container .add__to__cart__btn:hover {
+  background-color: #276096;
 }/*# sourceMappingURL=jacket.css.map */

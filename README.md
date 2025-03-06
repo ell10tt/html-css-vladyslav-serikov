@@ -7,4 +7,5 @@ HTML and CSS - Course Assignment
     3. fix the main page sizes
     4. products - 80% (adaptize)
     5. cart - 90% (adapt it for mobile)
-    6. summit shield jacket - 70%
+    6. summit shield jacket - 90% (adapt it for mobile)
+    7. billing - 80% (make it like a form)
