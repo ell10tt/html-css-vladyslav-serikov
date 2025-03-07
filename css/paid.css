@@ -1,0 +1,67 @@
+body {
+  height: 100vh;
+  background-size: 100%;
+  background: rgb(97, 141, 182);
+  background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
+  background-repeat: no-repeat;
+}
+
+.main .back__button {
+  display: flex;
+  text-decoration: none;
+  position: absolute;
+  left: 38px;
+  top: 146px;
+}
+.main .back__button .back__icon {
+  width: 42px;
+  height: 42px;
+}
+.main .back__button .back__link {
+  text-align: center;
+  margin-top: 6px;
+  margin-left: 6px;
+  font-size: 28px;
+  color: #030303;
+}
+.main .heading {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 500;
+}
+.main .textinfo {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 62px;
+}
+.main .textinfo .text {
+  font-size: 24px;
+  width: 300px;
+}
+.main .textinfo .text .blue__text {
+  color: #4895DD;
+}
+.main .textinfo .complete__img {
+  max-width: 300px;
+}
+.main .products__btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 32px;
+  width: 260px;
+  height: 68px;
+  background-color: #4895DD;
+  border-radius: 14px;
+  border-width: 0;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 32px;
+}
+.main .products__btn:hover {
+  background-color: #2062a0;
+}/*# sourceMappingURL=paid.css.map */

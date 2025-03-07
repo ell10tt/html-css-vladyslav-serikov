@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/blocks/header.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/zero.css">
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/paid.css">
 
     <title>Cart</title>
 </head>
@@ -50,45 +50,30 @@
     </header>
 
     <main class="main">
-        <a class="back__button" href="cart.html">
+        <a class="back__button" href="products.html">
             <img class="back__icon" src="img/icons/back.png" alt="">
             <p class="back__link">Back</p>
         </a>
 
-        <div class="container1">
-            
-            <h1 class="heading">Billing and delivery information</h1>
+        <h1 class="heading">Your payment has been successfully processed.</h1>
 
-            <div class="cont__holder">
-                <div class="billing__cont1">
-                    <input placeholder="Name" class="cont__item"></input>
-                    <input placeholder="E-mail" class="cont__item"></input>
-                    <input placeholder="Post code" class="cont__item"></input>
-                    <input placeholder="Country" class="cont__item"></input>
-                </div>
+            <div class="textinfo">
+                <p class="text">
+                    Please wait for delivery. For more information on delivery, 
+                    please see the section <span class="blue__text">Shipping and Delivery</span>
+                </p>
     
-                <div class="billing__cont2">
-                    <input placeholder="Last Name" class="cont__item"></input>
-                    <input placeholder="Adress" class="cont__item"></input>
-                    <input placeholder="City" class="cont__item"></input>
-                    <input placeholder="Phone" class="cont__item"></input>
-                </div>
-            </div>
-        </div>
-
-        <div class="container2">
-            <h1 class="heading">Total: 210.96$</h1>
-
-            <input placeholder="Card holder name" class="cont__item"></input>
-            <input placeholder="Card number" class="cont__item"></input>
-
-            <div class="card__cont">
-                <input placeholder="Due" class="card__item"></input>
-                <input placeholder="CVV" class="card__item"></input>
+                <img class="complete__img" src="./img/complete.png" alt="">
+    
+                <p class="text">
+                    Order Number: <span class="blue__text">#12345678</span>
+                    Thank you for your purchase! Your order is now being processed, 
+                    and you will receive a confirmation email shortly. 
+                </p>
             </div>
 
-            <a href="paid.html" class="pay__btn">Pay</a>
-        </div>
+            <a href="products.html" class="products__btn">Buy more</a>
+
     </main>
 
     <footer class="footer">

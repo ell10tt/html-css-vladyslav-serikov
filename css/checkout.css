@@ -8,6 +8,7 @@ body {
 
 .main {
   display: flex;
+  justify-content: center;
 }
 .main .back__button {
   display: flex;
@@ -64,6 +65,10 @@ body {
   background-color: #FFFFFF;
   font-size: 24px;
   border-radius: 10px;
+  border-width: 0;
+}
+.main .container2 .card__cont .card__item:focus {
+  outline: none;
 }
 .main .container2 .pay__btn {
   display: flex;
@@ -77,6 +82,7 @@ body {
   border-radius: 14px;
   border-width: 0;
   color: #FFFFFF;
+  text-decoration: none;
   font-size: 32px;
 }
 .main .container2 .pay__btn:hover {
@@ -93,4 +99,8 @@ body {
   background-color: #FFFFFF;
   font-size: 24px;
   border-radius: 10px;
+  border-width: 0;
+}
+.main .cont__item:focus {
+  outline: none;
 }/*# sourceMappingURL=checkout.css.map */

@@ -6,6 +6,7 @@ HTML and CSS - Course Assignment
     2. footer - 80% (adapt for mobile)
     3. fix the main page sizes
     4. products - 80% (adaptize)
-    5. cart - 90% (adapt it for mobile)
+    5. cart - 90% (adapt it for mobile) (delete item function)
     6. summit shield jacket - 90% (adapt it for mobile)
-    7. billing - 80% (make it like a form)
+    7. billing - 90% (adapt it for mobile)
+    8. paid - 90% (adapt it for mobile)
