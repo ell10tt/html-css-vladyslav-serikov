@@ -1,119 +1,105 @@
+.burger__menu {
+  grid-area: burger;
+}
+
+.left1 {
+  grid-area: left1;
+}
+
+.left2 {
+  grid-area: left2;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.right1 {
+  grid-area: right1;
+}
+
+.right2 {
+  grid-area: right2;
+}
+
+.cart {
+  grid-area: cart;
+}
+
 .header {
-  max-height: 135px;
+  text-align: center;
+  margin-top: 24px;
 }
-.header .navigation .navigation__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 80px;
-  justify-content: center;
-  list-style: none;
+.header .menu {
+  visibility: hidden;
 }
-.header .navigation .navigation__list .list__item {
-  gap: 80px;
+.header .navigation {
+  display: grid;
+  grid-template-areas: "burger left1 left2 logo right1 right2 cart";
+  grid-gap: 10px;
+  align-items: center;
 }
-.header .navigation .navigation__list .list__punct {
-  font-size: 32px;
-  margin-top: 48px;
-}
-.header .navigation .navigation__list .list__punct .list__link {
+.header .navigation .list__item {
   text-decoration: none;
+  font-size: 32px;
   color: #030303;
 }
-.header .navigation .navigation__list .link__logo {
-  margin-top: 24px;
-  max-width: 303px;
+.header .navigation .logo .logo__image {
+  width: 302px;
 }
-.header .navigation .navigation__list .link__icon__button {
+.header .navigation .cart {
   width: 54px;
   height: 54px;
   background-image: url(../../img/icons/cart.png);
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #4895DD;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
   border-radius: 10px;
-  position: fixed;
-  right: 32px;
-  top: 48px;
+}
+.header .navigation .cart:hover {
+  background-color: #3D7DB8;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
-  .header .navigation .navigation__list {
-    gap: 60px;
-  }
-  .header .navigation .navigation__list .list__punct {
+  .header .navigation .list__item {
     font-size: 28px;
-    margin-top: 40px;
   }
-  .header .navigation .navigation__list .link__logo {
-    max-width: 250px;
-  }
-  .header .navigation .navigation__list .link__icon__button {
-    width: 48px;
-    height: 48px;
-    right: 24px;
-    top: 40px;
-    background-size: 36px;
-    border-radius: 8px;
+  .header .navigation .logo .logo__image {
+    width: 280px;
   }
 }
 @media (max-width: 979px) {
-  .header .navigation .navigation__list {
-    gap: 40px;
-  }
-  .header .navigation .navigation__list .list__punct {
+  .header .navigation .list__item {
     font-size: 24px;
-    margin-top: 32px;
   }
-  .header .navigation .navigation__list .link__logo {
-    max-width: 200px;
-  }
-  .header .navigation .navigation__list .link__icon__button {
-    width: 40px;
-    height: 40px;
-    right: 20px;
-    top: 32px;
-    background-size: 32px;
-    border-radius: 6px;
+  .header .navigation .logo .logo__image {
+    width: 240px;
   }
 }
 @media (max-width: 767px) {
-  .header .navigation .navigation__list {
-    gap: 20px;
-  }
-  .header .navigation .navigation__list .list__punct {
+  .header .navigation .list__item {
     font-size: 20px;
-    margin-top: 24px;
   }
-  .header .navigation .navigation__list .link__logo {
-    max-width: 150px;
-  }
-  .header .navigation .navigation__list .link__icon__button {
-    width: 32px;
-    height: 32px;
-    right: 16px;
-    top: 24px;
-    background-size: 28px;
-    border-radius: 4px;
+  .header .navigation .logo .logo__image {
+    width: 200px;
   }
 }
-@media (max-width: 480px) {
-  .header .navigation .navigation__list {
-    gap: 10px;
+@media (max-width: 655px) {
+  .header .navigation {
+    display: grid;
+    grid-template-areas: "logo" "left1" "left2" "right1" "right2" "cart";
+    justify-content: space-around;
   }
-  .header .navigation .navigation__list .list__punct {
-    font-size: 16px;
-    margin-top: 16px;
+  .header .navigation .list__item {
+    font-size: 22px;
+    color: #030303;
   }
-  .header .navigation .navigation__list .link__logo {
-    max-width: 100px;
+  .header .navigation .logo .logo__image {
+    width: 180px;
   }
-  .header .navigation .navigation__list .link__icon__button {
-    width: 24px;
-    height: 24px;
-    right: 12px;
-    top: 16px;
-    background-size: 22px;
-    border-radius: 4px;
+  .header .navigation .cart {
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=header.css.map */

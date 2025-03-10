@@ -1,63 +1,68 @@
 // variables
     $main-text-color: #030303;
     $main-color: #4895DD;
-
+    $button-hover: #3D7DB8;
+    
     $breakpoint-laptops: 1200px;
     $breakpoint-big-tablets: 979px;
     $breakpoint-small-tablets: 767px;
-    $breakpoint-phones: 480px;
-
+    $breakpoint-phones: 655px;
+    
+    .burger__menu {grid-area: burger;}
+    .left1 {grid-area: left1;}
+    .left2 {grid-area: left2;}
+    .logo {grid-area: logo;}
+    .right1 {grid-area: right1;}
+    .right2 {grid-area: right2;}
+    .cart {grid-area: cart;}
 
 .header {
-    max-height: 135px;
+    text-align: center;
+    // max-height: 135px;
+    margin-top: 24px;
+
+    .menu {
+        visibility: hidden;
+    }
 
     .navigation {
-        .navigation__list {
-            display: flex;
-            flex-wrap: wrap;
+        display: grid;
+        grid-template-areas: 
+        "burger left1 left2 logo right1 right2 cart";
+        grid-gap: 10px;
+        align-items: center;
 
-            gap: 80px;
+        .list__item {
+            text-decoration: none;
 
-            justify-content: center;
+            font-size: 32px;
 
-            list-style: none;
+            color: $main-text-color;
+        }
 
-            .list__item {
-                gap: 80px;
+        .logo {
+            .logo__image {
+                width: 302px;
             }
+        }
 
-            .list__punct {
-                font-size: 32px;
-                margin-top: 48px;
+        .cart {
+            width: 54px;
+            height: 54px;
 
-                .list__link {
-                    text-decoration: none;
-                    color: $main-text-color;
-                }
-            }
+            background-image: url(../../img/icons/cart.png);
+            background-color: $main-color;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 40px;
 
-            .link__logo {
-                margin-top: 24px;
-                max-width: 303px ;
-            }
+            border-radius: 10px;
+        }
 
-            .link__icon__button{
-                width: 54px;
-                height: 54px;
+        .cart:hover {
+            background-color: $button-hover;
 
-                background-image: url(../../img/icons/cart.png);
-                background-size: 40px;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-color: $main-color;
-
-                border-radius: 10px;
-
-                position: fixed;
-
-                right: 32px;
-                top: 48px;
-            }
+            cursor: pointer;
         }
     }
 }
@@ -65,26 +70,12 @@
 @media (max-width: $breakpoint-laptops) {
     .header {
         .navigation {
-            .navigation__list {
-                gap: 60px;
-
-                .list__punct {
-                    font-size: 28px;
-                    margin-top: 40px;
-                }
-
-                .link__logo {
-                    max-width: 250px;
-                }
-
-                .link__icon__button {
-                    width: 48px;
-                    height: 48px;
-                    right: 24px;
-                    top: 40px;
-
-                    background-size: 36px;
-                    border-radius: 8px;
+            .list__item {
+                font-size: 28px;
+            }
+            .logo {
+                .logo__image {
+                    width: 280px;
                 }
             }
         }
@@ -94,26 +85,12 @@
 @media (max-width: $breakpoint-big-tablets) {
     .header {
         .navigation {
-            .navigation__list {
-                gap: 40px;
-
-                .list__punct {
-                    font-size: 24px;
-                    margin-top: 32px;
-                }
-
-                .link__logo {
-                    max-width: 200px;
-                }
-
-                .link__icon__button {
-                    width: 40px;
-                    height: 40px;
-                    right: 20px;
-                    top: 32px;
-
-                    background-size: 32px;
-                    border-radius: 6px;
+            .list__item {
+                font-size: 24px;
+            }
+            .logo {
+                .logo__image {
+                    width: 240px;
                 }
             }
         }
@@ -123,26 +100,13 @@
 @media (max-width: $breakpoint-small-tablets) {
     .header {
         .navigation {
-            .navigation__list {
-                gap: 20px;
+            .list__item {
+                font-size: 20px;
+            }
 
-                .list__punct {
-                    font-size: 20px;
-                    margin-top: 24px;
-                }
-
-                .link__logo {
-                    max-width: 150px;
-                }
-
-                .link__icon__button {
-                    width: 32px;
-                    height: 32px;
-                    right: 16px;
-                    top: 24px;
-
-                    background-size: 28px;
-                    border-radius: 4px;
+            .logo {
+                .logo__image {
+                    width: 200px;
                 }
             }
         }
@@ -152,27 +116,30 @@
 @media (max-width: $breakpoint-phones) {
     .header {
         .navigation {
-            .navigation__list {
-                gap: 10px;
-
-                .list__punct {
-                    font-size: 16px;
-                    margin-top: 16px;
+            display: grid;
+            grid-template-areas: 
+            "logo"
+            "left1"
+            "left2"
+            "right1"
+            "right2"
+            "cart";
+            justify-content: space-around;
+    
+            .list__item {
+                font-size: 22px;
+    
+                color: $main-text-color;
+            }
+    
+            .logo {
+                .logo__image {
+                    width: 180px;
                 }
-
-                .link__logo {
-                    max-width: 100px;
-                }
-
-                .link__icon__button {
-                    width: 24px;
-                    height: 24px;
-                    right: 12px;
-                    top: 16px;
-
-                    background-size: 22px;
-                    border-radius: 4px;
-                }
+            }
+    
+            .cart{
+                margin: 0 auto;
             }
         }
     }
