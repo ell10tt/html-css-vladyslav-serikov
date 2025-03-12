@@ -2,6 +2,7 @@ body {
   background-image: url(../img/homeBackground.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main .heading__container {
