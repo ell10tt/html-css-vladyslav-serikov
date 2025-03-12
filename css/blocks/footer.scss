@@ -13,13 +13,9 @@ $breakpoint-phones: 480px;
 
     margin-top: 60px;
 
-    height: 53px;
     width: 100vw;
 
     background-color: $main-color;
-
-    position:fixed;
-    bottom: 0;
 
     .footer__list {
         display: flex;

@@ -1,6 +1,6 @@
 body {
   background-image: url(../img/homeBackground.png);
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -14,7 +14,7 @@ body {
 .main .heading__container .heading {
   text-align: center;
   font-size: 64px;
-  color: #16251A;
+  color: #16251a;
 }
 .main .sub-heading__container {
   display: flex;
@@ -23,7 +23,7 @@ body {
 }
 .main .sub-heading__container .sub-heading {
   font-size: 48px;
-  color: #16251A;
+  color: #16251a;
 }
 .main .button__container {
   display: flex;
@@ -35,16 +35,16 @@ body {
   justify-content: center;
   width: 280px;
   height: 68px;
-  background-color: #5C8A4C;
+  background-color: #5c8a4c;
   border-radius: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 70%;
   text-decoration: none;
   font-size: 36px;
   font-weight: bold;
 }
 .main .button__container .shop__button:hover {
-  background-color: #16251A;
+  background-color: #16251a;
   transition: 0.5s;
   animation: ease-in-out;
 }/*# sourceMappingURL=home.css.map */
