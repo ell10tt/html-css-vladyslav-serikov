@@ -1,12 +1,6 @@
 $main-color: #618DB6;
 $main-font-color:#FFFFFF;
 
-$breakpoint-laptops: 1200px;
-$breakpoint-big-tablets: 979px;
-$breakpoint-small-tablets: 767px;
-$breakpoint-phones: 480px;
-
-
 .footer {
     display: flex;
     justify-content: center;
@@ -14,6 +8,7 @@ $breakpoint-phones: 480px;
     margin-top: 60px;
 
     width: 100vw;
+    min-height: 48px;
 
     background-color: $main-color;
 

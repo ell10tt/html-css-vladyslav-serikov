@@ -1,41 +1,40 @@
-$main-button-color: #5c8a4c;
-$hover-button-color: #16251a;
-$main-text-color: #16251a;
-$second-text-color: #ffffff;
+$main-button-color: #5C8A4C;
+$hover-button-color: #16251A;
+$main-text-color: #16251A;
+$second-text-color: #FFFFFF;
 
 body {
-  background-image: url(../img/homeBackground.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-image: url(../img/homeBackground.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
 }
 
 .main {
-  .heading__container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    .heading__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-    gap: 200px;
+        gap: 200px;
 
-    margin-top: 10vw;
-    .heading {
-      text-align: center;
-      font-size: 64px;
-      color: $main-text-color;
+        margin-top: 10vw;
+        .heading {
+            text-align: center;
+            font-size: 64px;
+            color: $main-text-color;
+        }
     }
-  }
 
-  .sub-heading__container {
-    display: flex;
-    justify-content: space-around;
+    .sub-heading__container {
+        display: flex;
+        justify-content: space-around;
 
-    margin-top: 32px;
-    .sub-heading {
-      font-size: 48px;
-      color: $main-text-color;
+        margin-top: 32px;
+        .sub-heading{
+            font-size: 48px;
+            color: $main-text-color;
+        }
     }
-  }
 
   .button__container {
     display: flex;
@@ -65,4 +64,89 @@ body {
       animation: ease-in-out;
     }
   }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-width: $breakpoint-laptops) {
+    .main {
+        .heading {
+            font-size: 56px;
+        }
+
+        .sub-heading {
+            font-size: 42px;
+        }
+
+        .button__container {
+            .shop__button {
+                width: 240px;
+                height: 60px;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-big-tablets) {
+    .main {
+        .heading {
+            font-size: 48px;
+        }
+
+        .sub-heading {
+            font-size: 36px;
+        }
+
+        .button__container {
+            .shop__button {
+                width: 220px;
+                height: 54px;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-small-tablets) {
+    .main {
+        .heading {
+            font-size: 40px;
+        }
+
+        .sub-heading {
+            font-size: 32px;
+        }
+
+        .button__container {
+            .shop__button {
+                width: 200px;
+                height: 48px;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-phones) {
+    .main {
+        .heading {
+            font-size: 32px;
+        }
+
+        .sub-heading {
+            font-size: 28px;
+        }
+
+        .button__container {
+            .shop__button {
+                width: 180px;
+                height: 42px;
+                font-size: 20px;
+            }
+        }
+    }
 }
