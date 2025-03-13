@@ -1,6 +1,27 @@
+.header {
+    grid-area: header;
+    }
+
+    .main {
+    width: 100vw;
+    grid-area: main;
+    }
+
+    .footer {
+    width: 100vw;
+    grid-area: footer;
+    }
+
 body {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
+
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
 }
 

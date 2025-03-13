@@ -2,11 +2,9 @@
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  height: 53px;
   width: 100vw;
+  min-height: 48px;
   background-color: #618DB6;
-  position: fixed;
-  bottom: 0;
 }
 .footer .footer__list {
   display: flex;
