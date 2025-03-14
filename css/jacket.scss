@@ -3,11 +3,18 @@ $main-font-color:#030303;
 $secondary-font-color:#FFFFFF;
 $secondary-color:#4895DD;
 
+$breakpoint-laptops: 1200px;
+$breakpoint-big-tablets: 979px;
+$breakpoint-small-tablets: 767px;
+$breakpoint-phones: 655px;
+
 body {
-    background-size: 100%;
     background: rgb(97,141,182);
     background: linear-gradient(0deg, rgba(97,141,182,1) 0%, rgba(255,255,255,1) 100%);
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .main {
@@ -75,6 +82,10 @@ body {
                 height: 60px;
                 background-color: $main-color;
                 border-radius: 12px;
+
+                img {
+                    height: 50px;
+                }
             }
             .second__container:hover {
                 cursor: pointer;
@@ -125,9 +136,6 @@ body {
         .description__container {
             font-size: 20px;
             max-width: 600px;
-            .description {
-                
-            }
 
             .description__list {
                 margin-top: 10px;
@@ -168,6 +176,7 @@ body {
         .add__to__cart__btn {
 
             margin-left: 337px;
+            margin-bottom: 50px;
 
             width: 226px;
             height: 68px;
@@ -184,6 +193,104 @@ body {
         }
         .add__to__cart__btn:hover {
             background-color: #276096;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-laptops) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .image__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info__container {
+            display: flex;
+            flex-direction: column;
+            .add__to__cart__btn {
+                
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-phones) {
+    .main {
+        .image__container {
+            margin-top: 80px;
+            
+            .main__image__container {
+                width: 300px;
+                height: 300px;
+
+                .main__image {
+                    width: 220px;
+                }
+            }
+        }
+    
+        .info__container {
+            .name__rate {
+                .heading {
+                    font-weight: 500;
+                    font-size: 38px;
+                }
+
+                .stars {
+                    display: flex;
+                    .star {
+                        width: 24px;
+                        height: 24px;
+
+                        background-image: url(../img/icons/StarActive.png);
+                        background-repeat: no-repeat;
+                        background-size: 22px;
+                    }
+                }
+            }
+    
+            .description__container {
+                font-size: 17px;
+                max-width: 500px;
+    
+                .description__list {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+    
+            .sizes__container {
+                display: flex;
+                text-align: center;
+    
+                .size__box {
+                    font-size: 32px;
+    
+                    color: $secondary-font-color;
+    
+                    width: 54px;
+                    height: 54px;
+    
+                    background-color: #A09F9F;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    margin-left: 10px;
+                }
+    
+                .size__box:first-child {
+                    margin-left: 0;
+                }
+                .size__box:hover {
+                    background-color: $secondary-color;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

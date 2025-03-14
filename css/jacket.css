@@ -1,8 +1,10 @@
 body {
-  background-size: 100%;
   background: rgb(97, 141, 182);
   background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .main {
@@ -55,6 +57,9 @@ body {
   height: 60px;
   background-color: #FFFFFF;
   border-radius: 12px;
+}
+.main .image__container .second__image__container .second__container img {
+  height: 50px;
 }
 .main .image__container .second__image__container .second__container:hover {
   cursor: pointer;
@@ -123,6 +128,7 @@ body {
 }
 .main .info__container .add__to__cart__btn {
   margin-left: 337px;
+  margin-bottom: 50px;
   width: 226px;
   height: 68px;
   font-size: 32px;
@@ -134,4 +140,80 @@ body {
 }
 .main .info__container .add__to__cart__btn:hover {
   background-color: #276096;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .image__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .info__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .info__container .add__to__cart__btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 655px) {
+  .main .image__container {
+    margin-top: 80px;
+  }
+  .main .image__container .main__image__container {
+    width: 300px;
+    height: 300px;
+  }
+  .main .image__container .main__image__container .main__image {
+    width: 220px;
+  }
+  .main .info__container .name__rate .heading {
+    font-weight: 500;
+    font-size: 38px;
+  }
+  .main .info__container .name__rate .stars {
+    display: flex;
+  }
+  .main .info__container .name__rate .stars .star {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/StarActive.png);
+    background-repeat: no-repeat;
+    background-size: 22px;
+  }
+  .main .info__container .description__container {
+    font-size: 17px;
+    max-width: 500px;
+  }
+  .main .info__container .description__container .description__list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .main .info__container .sizes__container {
+    display: flex;
+    text-align: center;
+  }
+  .main .info__container .sizes__container .size__box {
+    font-size: 32px;
+    color: #FFFFFF;
+    width: 54px;
+    height: 54px;
+    background-color: #A09F9F;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .main .info__container .sizes__container .size__box:first-child {
+    margin-left: 0;
+  }
+  .main .info__container .sizes__container .size__box:hover {
+    background-color: #4895DD;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=jacket.css.map */

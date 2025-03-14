@@ -3,6 +3,11 @@ $main-font-color:#030303;
 $secondary-font-color:#FFFFFF;
 $secondary-color:#4895DD;
 
+$breakpoint-laptops: 1200px;
+$breakpoint-big-tablets: 979px;
+$breakpoint-small-tablets: 767px;
+$breakpoint-phones: 655px;
+
 
 body {
     height: 100%;
@@ -246,4 +251,38 @@ body {
 .footer {
     position: relative;
     bottom: 0;
+}
+
+@media (max-width: $breakpoint-laptops) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+
+        .cart__info {
+            .info__total {
+            font-size: 38px;
+            font-weight: 600;
+            }
+    
+            .info__h3 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+    
+            .info__text {
+                margin-left: 20px;
+                font-size: 16px;
+            }
+            .buttons {
+                margin-bottom: 30px;
+                .checkout__button {
+                    margin-left: 42px;
+                }
+            }
+        }
+    }
+    
 }

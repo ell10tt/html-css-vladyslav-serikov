@@ -1,6 +1,8 @@
 
 $card-background: #fff;
 $button-background: #4895DD;
+$button-background-hover: #346ea5;
+
 
 body {
     overflow-x: hidden;
@@ -24,6 +26,8 @@ body {
                 width: 360px;
                 height: 360px;
 
+                margin-bottom: 44px;
+
                 border-radius: 20px;
 
                 background-color: $card-background;
@@ -55,6 +59,11 @@ body {
                         .size {
                             margin-right: 5px;
                         }
+
+                        .size:hover {
+                            color: $button-background;
+                            cursor: pointer;
+                        }
                     }
     
                     .addToCart__button {
@@ -78,7 +87,10 @@ body {
                         text-decoration: none;
                         font-size: 20px;
                         font-weight: bold;
-    
+                    }
+
+                    .addToCart__button:hover {
+                        background-color: $button-background-hover;
                     }
                 }
             }
@@ -98,6 +110,8 @@ body {
 
                 border-radius: 20px;
 
+                margin-bottom: 44px;
+
                 background-color: $card-background;
 
                 .name__container {
@@ -127,6 +141,11 @@ body {
                         .size {
                             margin-right: 5px;
                         }
+
+                        .size:hover {
+                            color: $button-background;
+                            cursor: pointer;
+                        }
                     }
     
                     .addToCart__button {
@@ -150,7 +169,10 @@ body {
                         text-decoration: none;
                         font-size: 20px;
                         font-weight: bold;
-    
+                    }
+
+                    .addToCart__button:hover {
+                        background-color: $button-background-hover;
                     }
                 }
             }

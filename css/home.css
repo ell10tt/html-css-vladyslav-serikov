@@ -1,106 +1,110 @@
 body {
   background-image: url(../img/homeBackground.png);
-  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  margin-top: 190px;
-  height: 80vh;
+  align-items: center;
+  margin-top: 80px;
 }
 .main .heading {
-  display: flex;
-  justify-content: space-around;
-  font-size: 64px;
-  color: #16251a;
+  color: #16251A;
+  font-size: 48px;
 }
 .main .sub-heading {
-  display: flex;
-  justify-content: space-around;
-  font-size: 48px;
-  color: #16251a;
+  color: #16251A;
+  font-size: 38px;
 }
-.main .button__container {
+.main .shop__button {
   display: flex;
   justify-content: center;
-}
-.main .button__container .shop__button {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 280px;
-  height: 68px;
-  background-color: #5c8a4c;
-  border-radius: 14px;
-  color: #ffffff;
-  opacity: 70%;
+  width: 260px;
+  height: 66px;
+  margin-top: 50px;
+  color: #FFFFFF;
   text-decoration: none;
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 500;
+  background-color: #5C8A4C;
+  opacity: 70%;
+  border-radius: 14px;
 }
-.main .button__container .shop__button:hover {
-  background-color: #16251a;
-  transition: 0.5s;
-  animation: ease-in-out;
+.main .shop__button:hover {
+  background-color: #04581b;
 }
 
 .footer {
   position: fixed;
   bottom: 0;
+  margin-top: 60px;
 }
 
 @media (max-width: 1200px) {
   .main .heading {
-    font-size: 56px;
+    font-size: 38px;
   }
   .main .sub-heading {
-    font-size: 42px;
+    font-size: 28px;
   }
-  .main .button__container .shop__button {
-    width: 240px;
-    height: 60px;
-    font-size: 32px;
+  .main .shop__button {
+    width: 200px;
+    height: 64px;
+    margin-top: 30px;
+    font-size: 28px;
   }
 }
 @media (max-width: 979px) {
   .main .heading {
-    font-size: 48px;
+    font-size: 32px;
   }
   .main .sub-heading {
-    font-size: 36px;
+    font-size: 22px;
   }
-  .main .button__container .shop__button {
-    width: 220px;
+  .main .shop__button {
+    width: 180px;
     height: 54px;
-    font-size: 28px;
+    margin-top: 20px;
+    font-size: 22px;
   }
 }
 @media (max-width: 767px) {
-  .main .heading {
-    font-size: 40px;
+  .main {
+    margin-top: 60px;
   }
-  .main .sub-heading {
+  .main .heading {
     font-size: 32px;
   }
-  .main .button__container .shop__button {
-    width: 200px;
-    height: 48px;
-    font-size: 24px;
+  .main .sub-heading {
+    font-size: 22px;
+  }
+  .main .shop__button {
+    width: 180px;
+    height: 54px;
+    margin-top: 20px;
+    font-size: 22px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 655px) {
+  .main {
+    margin-top: 40px;
+  }
   .main .heading {
-    font-size: 32px;
+    font-size: 26px;
   }
   .main .sub-heading {
-    font-size: 28px;
-  }
-  .main .button__container .shop__button {
-    width: 180px;
-    height: 42px;
     font-size: 20px;
+  }
+  .main .shop__button {
+    margin-top: 20px;
+    margin-buttom: 50px;
+  }
+  .footer {
+    position: relative;
   }
 }/*# sourceMappingURL=home.css.map */

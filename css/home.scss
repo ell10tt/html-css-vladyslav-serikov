@@ -1,152 +1,157 @@
 $main-button-color: #5C8A4C;
-$hover-button-color: #16251A;
+$hover-button-color: #04581b;
 $main-text-color: #16251A;
 $second-text-color: #FFFFFF;
 
+$breakpoint-laptops: 1200px;
+$breakpoint-big-tablets: 979px;
+$breakpoint-small-tablets: 767px;
+$breakpoint-phones: 655px;
+
 body {
     background-image: url(../img/homeBackground.png);
-    background-size: 100vw;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .main {
-    .heading__container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        gap: 200px;
-
-        margin-top: 10vw;
-        .heading {
-            text-align: center;
-            font-size: 64px;
-            color: $main-text-color;
-        }
-    }
-
-    .sub-heading__container {
-        display: flex;
-        justify-content: space-around;
-
-        margin-top: 32px;
-        .sub-heading{
-            font-size: 48px;
-            color: $main-text-color;
-        }
-    }
-
-  .button__container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 80px;
+
+    .heading {
+        color: $main-text-color;
+        font-size: 48px;
+    }
+
+    .sub-heading {
+        color: $main-text-color;
+        font-size: 38px;
+    }
 
     .shop__button {
-      display: flex;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
 
-      align-items: center;
-      justify-content: center;
+        width: 260px;
+        height: 66px;
 
-      width: 280px;
-      height: 68px;
+        margin-top: 50px;
 
-      background-color: $main-button-color;
-      border-radius: 14px;
-      color: $second-text-color;
-      opacity: 70%;
-      text-decoration: none;
+        color: $second-text-color;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: 500;
 
-      font-size: 36px;
-      font-weight: bold;
+        background-color: $main-button-color;
+        opacity: 70%;
+        border-radius: 14px;
     }
+
     .shop__button:hover {
-      background-color: $hover-button-color;
-      transition: 0.5s;
-      animation: ease-in-out;
+        background-color: $hover-button-color;
     }
-  }
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-}
+    .footer {
+        position: fixed;
+        bottom: 0;
 
-@media (max-width: $breakpoint-laptops) {
-    .main {
-        .heading {
-            font-size: 56px;
-        }
+        margin-top: 60px;
+    }
 
-        .sub-heading {
-            font-size: 42px;
-        }
-
-        .button__container {
-            .shop__button {
-                width: 240px;
-                height: 60px;
-                font-size: 32px;
+    @media (max-width: $breakpoint-laptops) {
+        .main {
+            .heading {
+                font-size: 38px;
             }
-        }
-    }
-}
-
-@media (max-width: $breakpoint-big-tablets) {
-    .main {
-        .heading {
-            font-size: 48px;
-        }
-
-        .sub-heading {
-            font-size: 36px;
-        }
-
-        .button__container {
-            .shop__button {
-                width: 220px;
-                height: 54px;
+        
+            .sub-heading {
                 font-size: 28px;
             }
-        }
-    }
-}
-
-@media (max-width: $breakpoint-small-tablets) {
-    .main {
-        .heading {
-            font-size: 40px;
-        }
-
-        .sub-heading {
-            font-size: 32px;
-        }
-
-        .button__container {
+        
             .shop__button {
                 width: 200px;
-                height: 48px;
-                font-size: 24px;
+                height: 64px;
+        
+                margin-top: 30px;
+
+                font-size: 28px;
+        
             }
         }
     }
-}
-
-@media (max-width: $breakpoint-phones) {
-    .main {
-        .heading {
-            font-size: 32px;
-        }
-
-        .sub-heading {
-            font-size: 28px;
-        }
-
-        .button__container {
+    
+    @media (max-width: $breakpoint-big-tablets) {
+        .main {
+            .heading {
+                font-size: 32px;
+            }
+        
+            .sub-heading {
+                font-size: 22px;
+            }
+        
             .shop__button {
                 width: 180px;
-                height: 42px;
-                font-size: 20px;
+                height: 54px;
+        
+                margin-top: 20px;
+
+                font-size: 22px;
+        
             }
         }
     }
-}
+    
+    @media (max-width: $breakpoint-small-tablets) {
+        .main {
+            margin-top: 60px;
+            .heading {
+                font-size: 32px;
+            }
+        
+            .sub-heading {
+                font-size: 22px;
+            }
+        
+            .shop__button {
+                width: 180px;
+                height: 54px;
+        
+                margin-top: 20px;
+
+                font-size: 22px;
+        
+            }
+        }
+    }
+    
+    @media (max-width: $breakpoint-phones) {
+        .main {
+            margin-top: 40px;
+            .heading {
+                font-size: 26px;
+            }
+        
+            .sub-heading {
+                font-size: 20px;
+            }
+
+            .shop__button {
+                margin-top: 20px;
+                margin-buttom: 50px;
+            }
+        }
+
+        .footer {
+            position: relative;
+        }
+    }

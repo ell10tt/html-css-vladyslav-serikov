@@ -14,6 +14,7 @@ body {
 .main .cards .row1 .card {
   width: 360px;
   height: 360px;
+  margin-bottom: 44px;
   border-radius: 20px;
   background-color: #fff;
 }
@@ -40,6 +41,10 @@ body {
 .main .cards .row1 .card .price__panel .size__block .size {
   margin-right: 5px;
 }
+.main .cards .row1 .card .price__panel .size__block .size:hover {
+  color: #4895DD;
+  cursor: pointer;
+}
 .main .cards .row1 .card .price__panel .addToCart__button {
   display: flex;
   width: 186px;
@@ -55,6 +60,9 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
+.main .cards .row1 .card .price__panel .addToCart__button:hover {
+  background-color: #346ea5;
+}
 .main .cards .row2 {
   display: flex;
   flex-wrap: wrap;
@@ -66,6 +74,7 @@ body {
   width: 360px;
   height: 360px;
   border-radius: 20px;
+  margin-bottom: 44px;
   background-color: #fff;
 }
 .main .cards .row2 .card .name__container {
@@ -91,6 +100,10 @@ body {
 .main .cards .row2 .card .price__panel .size__block .size {
   margin-right: 5px;
 }
+.main .cards .row2 .card .price__panel .size__block .size:hover {
+  color: #4895DD;
+  cursor: pointer;
+}
 .main .cards .row2 .card .price__panel .addToCart__button {
   display: flex;
   width: 186px;
@@ -105,6 +118,9 @@ body {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
+}
+.main .cards .row2 .card .price__panel .addToCart__button:hover {
+  background-color: #346ea5;
 }
 
 .footer {

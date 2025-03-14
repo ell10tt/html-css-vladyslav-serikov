@@ -177,4 +177,31 @@ body {
 .footer {
   position: relative;
   bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .cart__info .info__total {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .main .cart__info .info__h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .main .cart__info .info__text {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  .main .cart__info .buttons {
+    margin-bottom: 30px;
+  }
+  .main .cart__info .buttons .checkout__button {
+    margin-left: 42px;
+  }
 }/*# sourceMappingURL=cart.css.map */

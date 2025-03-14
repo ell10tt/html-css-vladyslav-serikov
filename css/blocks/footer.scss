@@ -3,44 +3,30 @@ $main-font-color:#FFFFFF;
 
 .footer {
     display: flex;
-    justify-content: center;
 
-    margin-top: 60px;
+    align-items: center;
+    justify-content: space-around;
 
-    width: 100vw;
+    gap: 20px;
+
+    flex-wrap: wrap;
+
     min-height: 48px;
+    width: 100vw;
 
     background-color: $main-color;
 
-    .footer__list {
+    .footer__list__link {
+        text-decoration: none;
+        color: $main-font-color;
+
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .social-media__container {
         display: flex;
-        flex-wrap: wrap;
 
-        justify-content: center;
-        align-items: center;
-
-
-        .footer__list__punct{
-            list-style: none;
-
-            .footer__list__link {
-                color: $main-font-color;
-                text-decoration: none;
-                font-size: 20px;
-
-                .footer__icon {
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-        }
-    }
-
-    .footer__list__punct:nth-child(-n+5) {
-        margin-right: 80px;
-    }
-
-    .footer__list__punct:nth-last-child(-n+3) {
-        margin-right: 16px;
+        gap: 8px;
     }
 }
