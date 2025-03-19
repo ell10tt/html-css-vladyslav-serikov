@@ -3,12 +3,19 @@ $main-font-color:#030303;
 $secondary-font-color:#FFFFFF;
 $secondary-color:#4895DD;
 
+$breakpoint-laptops: 1200px;
+$breakpoint-big-tablets: 979px;
+$breakpoint-small-tablets: 767px;
+$breakpoint-phones: 655px;
+
 body {
-    height: 100vh;
+    height: 100%;
     background-size: 100%;
     background: rgb(97,141,182);
     background: linear-gradient(0deg, rgba(97,141,182,1) 0%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
+
+    overflow-x: hidden;
 }
 
 .main {
@@ -78,6 +85,7 @@ body {
             margin: 0 auto;
     
             margin-top: 32px;
+            margin-bottom: 80px;
     
             width: 260px;
             height: 68px;
@@ -90,9 +98,34 @@ body {
             color: $secondary-font-color;
             text-decoration: none;
             font-size: 32px;
+
         }
     
         .products__btn:hover {
             background-color: #2062a0;
         }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-width: $breakpoint-small-tablets) {
+    .main {
+        display: flex;
+        flex-direction: column;
+
+        .textinfo {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            text-align: center;
+        }
+
+        .products__btn {
+            margin-bottom: 160px;
+        }
+    }
 }

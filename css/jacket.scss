@@ -9,12 +9,13 @@ $breakpoint-small-tablets: 767px;
 $breakpoint-phones: 655px;
 
 body {
+    height: 100%;
+    background-size: 100%;
     background: rgb(97,141,182);
     background: linear-gradient(0deg, rgba(97,141,182,1) 0%, rgba(255,255,255,1) 100%);
-    background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+
+    overflow-x: hidden;
 }
 
 .main {
@@ -195,6 +196,11 @@ body {
             background-color: #276096;
         }
     }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
 }
 
 @media (max-width: $breakpoint-laptops) {
