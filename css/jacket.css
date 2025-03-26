@@ -1,8 +1,8 @@
 body {
-  height: 100%;
-  background-size: 100%;
+  min-height: 100vh;
   background: rgb(97, 141, 182);
   background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
+  background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
@@ -220,5 +220,9 @@ body {
   .main .info__container .sizes__container .size__box:hover {
     background-color: #4895DD;
     cursor: pointer;
+  }
+  .footer {
+    position: relative;
+    bottom: 0;
   }
 }/*# sourceMappingURL=jacket.css.map */

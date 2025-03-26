@@ -1,3 +1,6 @@
+@import url("../css/zero.css");
+@import url("../css/blocks/header.css");
+@import url("../css/blocks/footer.css");
 body {
   font-family: "Poppins", serif;
   font-weight: 400;

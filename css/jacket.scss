@@ -9,10 +9,10 @@ $breakpoint-small-tablets: 767px;
 $breakpoint-phones: 655px;
 
 body {
-    height: 100%;
-    background-size: 100%;
+    min-height: 100vh;
     background: rgb(97,141,182);
     background: linear-gradient(0deg, rgba(97,141,182,1) 0%, rgba(255,255,255,1) 100%);
+    background-size: cover;
     background-repeat: no-repeat;
 
     overflow-x: hidden;
@@ -178,6 +178,7 @@ body {
 
             margin-left: 337px;
             margin-bottom: 50px;
+            // margin-bottom: 20%;
 
             width: 226px;
             height: 68px;
@@ -298,5 +299,10 @@ body {
                 }
             }
         }
+    }
+
+    .footer {
+        position: relative;
+        bottom: 0;
     }
 }

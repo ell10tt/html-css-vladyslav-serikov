@@ -1,8 +1,8 @@
 body {
-  height: 100%;
-  background-size: 100%;
+  min-height: 100vh;
   background: rgb(97, 141, 182);
   background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
+  background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
@@ -29,7 +29,13 @@ body {
 }
 
 .footer {
-  margin-top: 20px;
-  position: relative;
+  position: fixed;
   bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    position: relative;
+    margin-top: 32px;
+  }
 }/*# sourceMappingURL=about.css.map */

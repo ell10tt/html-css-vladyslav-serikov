@@ -1,8 +1,8 @@
 body {
-  height: 100%;
-  background-size: 100%;
+  min-height: 100vh;
   background: rgb(97, 141, 182);
   background: linear-gradient(0deg, rgb(97, 141, 182) 0%, rgb(255, 255, 255) 100%);
+  background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
@@ -215,6 +215,10 @@ body {
   }
   .main .cart__info .buttons {
     margin-bottom: 60px;
+  }
+  .main .cart__info .buttons .cart__btn {
+    padding-left: 22px;
+    padding-right: 22px;
   }
   .main .cart__info .buttons .checkout__button {
     margin-top: 20px;
