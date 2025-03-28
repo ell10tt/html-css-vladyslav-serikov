@@ -10,6 +10,7 @@ body {
 .main {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .main .back__button {
   display: flex;
@@ -69,17 +70,20 @@ body {
   margin-left: 40px;
   max-width: 260px;
   max-height: 68px;
-  background-color: #4895DD;
+  background-color: #5C8A4C;
   border-radius: 14px;
   border-width: 0;
   color: #FFFFFF;
   text-decoration: none;
   font-size: 32px;
 }
+.main .pay__button:hover {
+  background-color: #3D7DB8;
+}
 
 .footer {
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
 }
 
 .item1 {
@@ -168,6 +172,12 @@ body {
   grid-row-start: 5;
 }
 
+@media (max-width: 1200px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+  }
+}
 @media (max-width: 767px) {
   .main {
     display: flex;
@@ -186,8 +196,5 @@ body {
   }
   .main .pay__button {
     margin-bottom: 30px;
-  }
-  .footer {
-    position: relative;
   }
 }/*# sourceMappingURL=checkout.css.map */

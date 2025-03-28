@@ -14,10 +14,12 @@ body {
 }
 .main .heading {
   color: #16251A;
+  text-shadow: 0 0 30px #fff;
   font-size: 48px;
 }
 .main .sub-heading {
   color: #16251A;
+  text-shadow: 0 0 30px #fff;
   font-size: 38px;
 }
 .main .shop__button {

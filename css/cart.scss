@@ -1,8 +1,8 @@
 $main-color: #FFFFFF;
 $main-font-color:#030303;
 $secondary-font-color:#FFFFFF;
-$secondary-color:#4895DD;
-$hover-color: #326BA0;
+$secondary-color:#0C59A1;
+$hover-color: #3D7DB8;
 
 $breakpoint-laptops: 1200px;
 $breakpoint-big-tablets: 979px;
@@ -259,6 +259,7 @@ body {
             }
 
             .checkout__button {
+                background-color: #5C8A4C;
                 margin-left: 42px;
             }
         }

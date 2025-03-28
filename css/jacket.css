@@ -123,23 +123,23 @@ body {
   margin-left: 0;
 }
 .main .info__container .sizes__container .size__box:hover {
-  background-color: #4895DD;
+  background-color: #3D7DB8;
   cursor: pointer;
 }
 .main .info__container .add__to__cart__btn {
   margin-left: 337px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   width: 226px;
   height: 68px;
   font-size: 32px;
   color: #FFFFFF;
   border-radius: 14px;
   border-width: 0;
-  background-color: #4895DD;
+  background-color: #5C8A4C;
   cursor: pointer;
 }
 .main .info__container .add__to__cart__btn:hover {
-  background-color: #276096;
+  background-color: #3D7DB8;
 }
 
 .footer {
@@ -180,20 +180,20 @@ body {
   }
   .main .info__container .name__rate .heading {
     font-weight: 500;
-    font-size: 38px;
+    font-size: 32px;
   }
   .main .info__container .name__rate .stars {
     display: flex;
   }
   .main .info__container .name__rate .stars .star {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     background-image: url(../img/icons/StarActive.png);
     background-repeat: no-repeat;
-    background-size: 22px;
+    background-size: 18px;
   }
   .main .info__container .description__container {
-    font-size: 17px;
+    font-size: 16px;
     max-width: 500px;
   }
   .main .info__container .description__container .description__list {
@@ -218,7 +218,7 @@ body {
     margin-left: 0;
   }
   .main .info__container .sizes__container .size__box:hover {
-    background-color: #4895DD;
+    background-color: #5C8A4C;
     cursor: pointer;
   }
   .footer {

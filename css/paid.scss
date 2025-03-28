@@ -1,7 +1,8 @@
 $main-color: #FFFFFF;
 $main-font-color:#030303;
 $secondary-font-color:#FFFFFF;
-$secondary-color:#4895DD;
+$secondary-color:#0C59A1;
+$button-background-hover: #3D7DB8;
 
 $breakpoint-laptops: 1200px;
 $breakpoint-big-tablets: 979px;
@@ -19,6 +20,8 @@ body {
 }
 
 .main {
+    margin-bottom: 30px;
+    
     .back__button {
         display: flex;
 
@@ -90,7 +93,7 @@ body {
             width: 260px;
             height: 68px;
     
-            background-color: $secondary-color;
+            background-color: #5C8A4C;
     
             border-radius: 14px;
             border-width: 0;
@@ -102,13 +105,13 @@ body {
         }
     
         .products__btn:hover {
-            background-color: #2062a0;
+            background-color: $button-background-hover;
         }
 }
 
 .footer {
     position: fixed;
-    bottom: 0;
+    bottom: -2px;
 }
 
 @media (max-width: $breakpoint-small-tablets) {

@@ -1,7 +1,8 @@
 $main-color: #FFFFFF;
 $main-font-color:#030303;
 $secondary-font-color:#FFFFFF;
-$secondary-color:#4895DD;
+$secondary-color:#5C8A4C;
+$hover-color:#3D7DB8;
 
 $breakpoint-laptops: 1200px;
 $breakpoint-big-tablets: 979px;
@@ -169,7 +170,7 @@ body {
                 margin-left: 0;
             }
             .size__box:hover {
-                background-color: $secondary-color;
+                background-color: $hover-color;
                 cursor: pointer;
             }
         }
@@ -177,8 +178,7 @@ body {
         .add__to__cart__btn {
 
             margin-left: 337px;
-            margin-bottom: 50px;
-            // margin-bottom: 20%;
+            margin-bottom: 100px;
 
             width: 226px;
             height: 68px;
@@ -194,7 +194,7 @@ body {
             cursor: pointer;
         }
         .add__to__cart__btn:hover {
-            background-color: #276096;
+            background-color: $hover-color;
         }
     }
 }
@@ -246,24 +246,24 @@ body {
             .name__rate {
                 .heading {
                     font-weight: 500;
-                    font-size: 38px;
+                    font-size: 32px;
                 }
 
                 .stars {
                     display: flex;
                     .star {
-                        width: 24px;
-                        height: 24px;
+                        width: 18px;
+                        height: 18px;
 
                         background-image: url(../img/icons/StarActive.png);
                         background-repeat: no-repeat;
-                        background-size: 22px;
+                        background-size: 18px;
                     }
                 }
             }
     
             .description__container {
-                font-size: 17px;
+                font-size: 16px;
                 max-width: 500px;
     
                 .description__list {

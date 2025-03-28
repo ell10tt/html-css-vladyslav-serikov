@@ -44,7 +44,7 @@ body {
   margin-right: 5px;
 }
 .main .cards .row1 .card .price__panel .size__block .size:hover {
-  color: #4895DD;
+  color: #0C59A1;
   cursor: pointer;
 }
 .main .cards .row1 .card .price__panel .addToCart__button {
@@ -55,7 +55,7 @@ body {
   justify-content: center;
   margin-left: 80px;
   margin-top: -30px;
-  background-color: #4895DD;
+  background-color: #0C59A1;
   color: #fff;
   border-radius: 14px;
   text-decoration: none;
@@ -103,7 +103,7 @@ body {
   margin-right: 5px;
 }
 .main .cards .row2 .card .price__panel .size__block .size:hover {
-  color: #4895DD;
+  color: #0C59A1;
   cursor: pointer;
 }
 .main .cards .row2 .card .price__panel .addToCart__button {
@@ -114,7 +114,7 @@ body {
   justify-content: center;
   margin-left: 80px;
   margin-top: -30px;
-  background-color: #4895DD;
+  background-color: #0C59A1;
   color: #fff;
   border-radius: 14px;
   text-decoration: none;

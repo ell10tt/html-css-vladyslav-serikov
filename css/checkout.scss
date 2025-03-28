@@ -1,7 +1,8 @@
 $main-color: #FFFFFF;
 $main-font-color:#030303;
 $secondary-font-color:#FFFFFF;
-$secondary-color:#4895DD;
+$secondary-color:#5C8A4C;
+$button-background-hover: #3D7DB8;
 
 $breakpoint-laptops: 1200px;
 $breakpoint-big-tablets: 979px;
@@ -21,6 +22,8 @@ body {
 .main {
     display: flex;
     justify-content: center;
+
+    margin-bottom: 30px;
     
     .back__button {
         display: flex;
@@ -116,11 +119,14 @@ body {
         text-decoration: none;
         font-size: 32px;
     }
+    .pay__button:hover {
+        background-color: $button-background-hover;
+    }
 }
 
 .footer {
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
 }
 
 // Grid system
@@ -210,6 +216,13 @@ body {
     grid-row-start: 5;
 }    
 
+@media (max-width: $breakpoint-laptops) {
+    .footer {
+        position: relative;
+        bottom: 0;
+    }
+}
+
 @media (max-width: $breakpoint-small-tablets) {
     .main {
         display: flex;
@@ -232,9 +245,5 @@ body {
         .pay__button {
             margin-bottom: 30px;
         }
-    }
-
-    .footer {
-        position: relative;
     }
 }
